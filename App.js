@@ -7,6 +7,7 @@ import Tabs from './src/screens/BottomBar/Tabs';
 import AllItems from './src/screens/AllItems/AllItems';
 import SingleItem from './src/screens/SingleItem/SingleItem';
 import EditDetails from './src/screens/Profile/EditDetails';
+import Register from './src/screens/Registration/Registration';
 
 const Stack = createStackNavigator();
 
@@ -16,6 +17,7 @@ const App = () => {
             <Stack.Navigator>
                 <Stack.Screen name="StartScreen" component={StartScreen} options={{ headerShown: false }} />
                 <Stack.Screen name="Login" component={Login} options={{ headerShown: false }} />
+                <Stack.Screen name="Registration" component={Register} options={{ headerShown: false }} />
                 <Stack.Screen name="Tabs" component={Tabs} options={{ headerShown: false }} />
                 <Stack.Screen name="AllItems" component={AllItems} options={{ headerShown: false }} />
                 <Stack.Screen name="SingleItem" component={SingleItem} options={{ headerShown: false }} />

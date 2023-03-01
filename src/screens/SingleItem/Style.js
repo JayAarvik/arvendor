@@ -1,4 +1,4 @@
-import { StyleSheet } from "react-native"
+import { StyleSheet, Platform } from "react-native"
 import { BGC, BGR, BGRDRK, BLUE } from "../../Utils/Import";
 
 const Style = StyleSheet.create({
@@ -16,13 +16,14 @@ const Style = StyleSheet.create({
     marginTop:-70
    },
    UpperIcons:{
+      paddingTop : Platform.OS == "ios" ? 50 : null,
     flexDirection:"row",
     justifyContent:"space-between",
     margin:10
    },
    backIcon:{
     padding:5,
-    backgroundColor:"#777",
+    backgroundColor:"transparent",
     borderRadius:50
    },
    proDetailView:{
